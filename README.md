@@ -2,6 +2,7 @@
 ##Auctionly - Ethereum based Auction system
 
 Frontend - HTML, Javascript
+
 Backend - Truffle-contract, Ganache with Metamask
 
 Contract : Reputation, RateStorage, Auction
