@@ -1,5 +1,5 @@
 # Auctionly
-##Auctionly - Ethereum based Auction system
+## Auctionly - Ethereum based Auction system
 
 Frontend - HTML, Javascript
 
