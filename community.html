@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>커뮤니티</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <div id="communitywhole">
+    <div id="side">
+      <div id="mypage"></div>
+
+      <div id="communitymenu">
+        <div class="menu-title"><p class="title-name">커뮤니티</p></div>
+        <br>
+        <a class="com-sub-menu" href="community.html">자유게시판</a>
+        <a class="com-sub-menu">칼럼/수기</a>
+        <a class="com-sub-menu">부동산 뉴스</a>
+        <a class="com-sub-menu">공지사항</a>
+      </div>
+    </div>
+
+    <div id="centerdiv">
+      <h2>자유게시판</h2>
+      <div id="com-search">
+        <img src="src/searchbut.png" width="24" height="18" id="mini-search-but">
+        <input id="mini-search-input">
+        <span class="select">아이디</span> <input class="radio-but" type="radio" name="chk_info" value="아이디">
+        <span class="select">내용</span> <input class="radio-but" type="radio" name="chk_info" value="내용">
+        <span class="select">제목</span> <input class="radio-but" type="radio" name="chk_info" value="제목" checked="checked">
+      </div>
+      <table style="width: inherit; border-collapse: collapse; font-size: 14px;">
+        <thead>
+          <tr style="width: inherit; height: 30px"></tr>
+          <tr id="q-head">
+            <th>글번호</th>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>작성일</th>
+            <th>조회</th>
+          </tr>
+        </thead>
+        <tbody id="question_list">
+          <!--
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          <tr>
+            <td class="q-num">2501</td>
+            <td class="q-title"><a>낙찰가의 관련서류 열람은 언제부터?</a><span>[1]</span></td>
+            <td class="q-auth">aabde</td>
+            <td class="q-date">19-11-21</td>
+            <td class="q-view">137</td>
+          </tr>
+          -->
+
+        </tbody>
+        <tfoot>
+          <tr style="height: 80px; text-align: center;">
+            <td colspan="5"><a style="padding: 10px">1</a><a style="padding: 10px">2</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    let questions = [
+        { title: '낙찰가의 관련서류 열람은 언제부터?', count: 1, auth: 'aabde', date: '19-11-21', view: '137'},
+        { title: '안녕하세요 많은 가르침 부탁드립니다', count: 2, auth: 'bbb3434', date: '19-11-21', view: '69'},
+        { title: '10년이 지난 가처분..', count: 2, auth: 'ccc5656', date: '19-11-21', view: '143'},
+        { title: '꼭 읽어주시고 답변 부탁드립니다', count: 2, auth: 'abdcd', date: '19-11-21', view: '309'},
+        { title: '경매입찰서 작성방법 문의', count: 1, auth: 'dsf9sf', date: '19-11-21', view: '371'},
+        { title: '송달장소에 대한 문의입니다', count: 3, auth: 'ieown2', date: '19-11-21', view: '137'},
+        { title: '강제집행비용 예상?', count: 1, auth: 'peokw654', date: '19-11-21', view: '137'},
+        { title: '입찰 주의사항 질문 좀요', count: 2, auth: 'qpown', date: '19-11-21', view: '392'},
+        { title: '전세 만기후 1년 연장 가능여부', count: 4, auth: 'vdsws', date: '19-11-21', view: '102'},
+        { title: '낙찰자의 관련서류 열람은 언제부터?', count: 1, auth: 'odjmdf', date: '19-11-21', view: '802'},
+        { title: '안녕하세요 많은 가르침 부탁드립니다', count: 2, auth: 'asgewf', date: '19-11-21', view: '439'},
+        { title: '10년이 지난 가처분..', count: 2, auth: 'ccc5656', date: '19-11-21', view: '143'},
+        { title: '꼭 읽어주시고 답변 부탁드립니다', count: 2, auth: 'abdcd', date: '19-11-21', view: '309'},
+        { title: '경매입찰서 작성방법 문의', count: 1, auth: 'dsf9sf', date: '19-11-21', view: '371'},
+        { title: '송달장소에 대한 문의입니다', count: 3, auth: 'ieown2', date: '19-11-21', view: '137'},
+        { title: '강제집행비용 예상?', count: 1, auth: 'peokw654', date: '19-11-21', view: '137'},
+        { title: '입찰 주의사항 질문 좀요', count: 2, auth: 'qpown', date: '19-11-21', view: '392'},
+        { title: '전세 만기후 1년 연장 가능여부', count: 4, auth: 'vdsws', date: '19-11-21', view: '102'},
+        { title: '낙찰자의 관련서류 열람은 언제부터?', count: 1, auth: 'odjmdf', date: '19-11-21', view: '802'},
+        { title: '안녕하세요 많은 가르침 부탁드립니다', count: 2, auth: 'asgewf', date: '19-11-21', view: '439'},
+    ];
+
+    function createRegCell(row, className, element) {
+        let cel = row.insertCell();
+        cel.setAttribute('class', className);
+        let text = document.createTextNode(element);
+        cel.appendChild(text);
+    }
+
+    var nn = 2501;
+    function generateTable (table) {
+      for (let element of questions) {
+          let row = table.insertRow();
+          let n = row.insertCell();
+          n.setAttribute('class', 'q-num');
+          let text1 = document.createTextNode(nn);
+          nn--;
+          n.appendChild(text1);
+          let t = row.insertCell();
+          t.setAttribute('class', 'q-title');
+          let text2 = document.createTextNode(element['title']);
+          t.appendChild(text2);
+          let s = document.createElement('SPAN');
+          let c = document.createTextNode('['+ element['count'] + ']')
+          t.appendChild(s);
+          t.appendChild(c);
+          createRegCell(row, 'q-auth', element['auth']);
+          createRegCell(row, 'q-date', element['date']);
+          createRegCell(row, 'q-view', element['view']);
+      }
+    }
+
+    let list = document.getElementById('question_list');
+    generateTable(list);
+
+  </script>
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+      $(function(){
+          $("#nav-placeholder").load("nav.html");
+      });
+
+      $(function(){
+          $("#footer-placeholder").load("footer.html");
+      });
+
+      $(function(){
+          $("#mypage").load("mypage.html");
+      });
+  </script>
+</body>
+</html>
